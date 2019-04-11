@@ -14,8 +14,8 @@ class App extends Component {
 
   handleClick = (i) => {
     this.setState ({
-      text : text[i],
-      color : color[i]
+      text : 'text',
+      color : 'color'
     })
   }
   
@@ -25,7 +25,8 @@ class App extends Component {
     return (
       <div className={"App" + this.state.color}>
         <button>Change Theme</button>  
-      
+      <br/>
+      <br/>
       {this.state.text}
       </div>
     );
